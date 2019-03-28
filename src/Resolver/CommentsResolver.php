@@ -38,7 +38,7 @@ final class CommentsResolver implements ResolverInterface, AliasedInterface {
     {
         // TODO: Implement getAliases() method.
         return[
-            'resolve' => 'Comment'
+            'resolve' => 'Comments',
         ];
     }
 }

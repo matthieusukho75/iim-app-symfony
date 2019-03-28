@@ -34,11 +34,11 @@ final class ArticleResolver implements ResolverInterface, AliasedInterface {
     /**
      * {@inheritdoc}
      */
-    public static function getAliases()
+    public static function getAliases(): array
     {
         // TODO: Implement getAliases() method.
         return[
-            'resolve' => 'Article'
+            'resolve' => 'Article',
         ];
     }
 }

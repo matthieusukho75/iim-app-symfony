@@ -2,7 +2,7 @@
 
 namespace App\Resolver;
 
-use App\Entity\Category;
+
 use App\Repository\CategoryRepository;
 use Overblog\GraphQLBundle\Definition\Resolver\AliasedInterface;
 use Overblog\GraphQLBundle\Definition\Resolver\ResolverInterface;
@@ -35,11 +35,11 @@ final class CategoryResolver implements ResolverInterface, AliasedInterface {
     /**
      * {@inheritdoc}
      */
-    public static function getAliases()
+    public static function getAliases(): array
     {
         // TODO: Implement getAliases() method.
         return[
-            'resolve' => 'Category'
+            'resolve' => 'Category',
         ];
     }
 }

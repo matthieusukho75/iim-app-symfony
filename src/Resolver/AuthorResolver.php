@@ -35,11 +35,11 @@ final class AuthorResolver implements ResolverInterface, AliasedInterface {
     /**
      * {@inheritdoc}
      */
-    public static function getAliases()
+    public static function getAliases(): array
     {
         // TODO: Implement getAliases() method.
         return[
-            'resolve' => 'Author'
+            'resolve' => 'Author',
         ];
     }
 }
