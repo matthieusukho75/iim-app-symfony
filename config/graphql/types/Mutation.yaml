@@ -21,3 +21,15 @@ Mutation:
         args:
           input:
             type: CategoryInput!
+      NewComment:
+        type: MutationSuccess
+        resolve: "@=mutation('NewComment', [ args['input']['name'], args['input']['article_id'] ])"
+        args:
+          input:
+            type: CommentInput!
+      NewAuthor:
+        type: MutationSuccess
+        resolve: "@=mutation('NewAuthor', [ args['input']['name'], args['input']['article_id'] ])"
+        args:
+          input:
+            type: AuthorInput!
