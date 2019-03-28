@@ -1,0 +1,8 @@
+CategoryInput:
+  type: input-object
+  config:
+    fields:
+      name:
+        type: 'String!'
+      article_id:
+        type: 'Int!'

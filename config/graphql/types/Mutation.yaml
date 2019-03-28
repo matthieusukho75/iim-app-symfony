@@ -1,0 +1,23 @@
+MutationSuccess:
+  type: object
+  config:
+    fields:
+      content:
+        type: 'String!'
+
+Mutation:
+  type: object
+  config:
+    fields:
+      NewArticle:
+        type: MutationSuccess
+        resolve: "@=mutation('NewArticle', [ args['input']['name'], args['input']['comment_id'], args['input']['category_id'], args['input']['author_id']  ])"
+        args:
+          input:
+            type: ArticleInput!
+      NewCategory:
+        type: MutationSuccess
+        resolve: "@=mutation('NewCategory', [ args['input']['name'], args['input']['article_id'] ])"
+        args:
+          input:
+            type: CategoryInput!

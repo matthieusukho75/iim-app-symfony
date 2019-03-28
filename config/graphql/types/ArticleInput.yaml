@@ -1,0 +1,12 @@
+ArticleInput:
+  type: input-object
+  config:
+    fields:
+      name:
+        type: 'String!'
+      comment_id:
+        type: 'Int!'
+      category_id:
+        type: 'Int'
+      author_id:
+        type: 'Int!'
